@@ -1,0 +1,165 @@
+{
+  "title": "Fall Garden · Zone 7b",
+  "version": 1,
+  "location": "Millersville, MD",
+  "zone": "USDA 7b",
+  "disclaimer": "General public horticulture guidance for USDA zone 7b (central Maryland). Not a soil test, pest diagnosis, or site-specific landscape prescription. Adjust for your microclimate, drainage, and HOA rules.",
+  "months": [
+    {
+      "id": "october",
+      "label": "October",
+      "emoji": "🍂",
+      "focus": "Plant garlic & spring bulbs · start leaf mulch · cut spent annuals",
+      "tasks": [
+        {"id": "oct-garlic", "label": "Plant hardneck garlic cloves 2–3\" deep, pointy end up", "category": "plant"},
+        {"id": "oct-bulbs-early", "label": "Begin planting tulips, daffodils, alliums (soil still workable)", "category": "bulbs"},
+        {"id": "oct-cover", "label": "Sow winter rye or crimson clover in empty beds", "category": "cover"},
+        {"id": "oct-cutback", "label": "Cut back diseased foliage; leave healthy seedheads for birds", "category": "cut"},
+        {"id": "oct-leaves", "label": "Start shredding leaves for mulch (keep some whole for habitat)", "category": "leaf"},
+        {"id": "oct-water", "label": "Deep-water newly planted bulbs & garlic if dry", "category": "care"}
+      ]
+    },
+    {
+      "id": "november",
+      "label": "November",
+      "emoji": "🍁",
+      "focus": "Finish garlic · bulbs by Thanksgiving · mulch beds · tidy perennials",
+      "tasks": [
+        {"id": "nov-garlic", "label": "Finish garlic planting before ground freezes hard", "category": "plant"},
+        {"id": "nov-bulbs", "label": "Complete spring bulb planting by Thanksgiving if soil allows", "category": "bulbs"},
+        {"id": "nov-mulch", "label": "Apply 2–3\" shredded-leaf mulch after soil cools", "category": "leaf"},
+        {"id": "nov-cut", "label": "Cut back peony foliage to soil line; leave ornamental grasses standing", "category": "cut"},
+        {"id": "nov-tools", "label": "Clean & oil tools; drain hoses before hard freeze", "category": "care"},
+        {"id": "nov-compost", "label": "Add leaf pile / compost turn for spring soil", "category": "leaf"}
+      ]
+    }
+  ],
+  "plantNow": [
+    {
+      "id": "garlic",
+      "name": "Hardneck garlic",
+      "window": "Oct–Nov (zone 7b)",
+      "emoji": "🧄",
+      "how": "Separate cloves from bulbs the day you plant. Space 4–6\" apart in rows 12\" apart. Pointy tip up, 2–3\" deep. Mulch lightly after planting.",
+      "why": "Needs winter chill for good bulb formation. Millersville 7b winters usually deliver it.",
+      "example": true
+    },
+    {
+      "id": "cover-rye",
+      "name": "Winter rye (cover crop)",
+      "window": "Sep–early Nov",
+      "emoji": "🌾",
+      "how": "Broadcast in empty veg beds, rake lightly, keep moist until established. Terminate in spring before seed set.",
+      "why": "Holds soil, adds organic matter, suppresses winter weeds.",
+      "example": true
+    },
+    {
+      "id": "cover-clover",
+      "name": "Crimson clover",
+      "window": "Sep–Oct",
+      "emoji": "🍀",
+      "how": "Sow on bare soil; inoculate if soil is new. Pretty spring bloom; cut before seed if you want fewer volunteers.",
+      "why": "Nitrogen-fixing cover that looks good and feeds soil.",
+      "example": true
+    },
+    {
+      "id": "spinach",
+      "name": "Overwinter spinach (protected)",
+      "window": "Late Sep–Oct under row cover",
+      "emoji": "🥬",
+      "how": "Sow thick; cover with floating row cover or cold frame. Harvest small leaves through mild spells.",
+      "why": "Zone 7b can overwinter hardy greens with protection.",
+      "example": true
+    },
+    {
+      "id": "shallots",
+      "name": "Shallot sets",
+      "window": "Oct–Nov",
+      "emoji": "🧅",
+      "how": "Plant like garlic — tips just below soil, mulch after first hard frost.",
+      "why": "Same chill logic as garlic; harvest next summer.",
+      "example": true
+    }
+  ],
+  "bulbs": [
+    {
+      "id": "daffodil",
+      "name": "Daffodils",
+      "depth": "6\"",
+      "spacing": "4–6\"",
+      "note": "Reliable in MD; deer usually leave them alone. Plant by Thanksgiving.",
+      "emoji": "🌼"
+    },
+    {
+      "id": "tulip",
+      "name": "Tulips",
+      "depth": "6–8\"",
+      "spacing": "4–5\"",
+      "note": "Treat as annuals if squirrels dig; chicken wire over bed helps. Chill already done in fridge if pre-chilled packs.",
+      "emoji": "🌷"
+    },
+    {
+      "id": "allium",
+      "name": "Alliums",
+      "depth": "4–6\" (size-dependent)",
+      "spacing": "8–12\"",
+      "note": "Architectural spring/early summer bloom; plant larger bulbs deeper.",
+      "emoji": "🟣"
+    },
+    {
+      "id": "crocus",
+      "name": "Crocus",
+      "depth": "3–4\"",
+      "spacing": "2–3\"",
+      "note": "Early color; squirrels love them — plant in pots or under wire.",
+      "emoji": "💜"
+    },
+    {
+      "id": "hyacinth",
+      "name": "Hyacinths",
+      "depth": "5–6\"",
+      "spacing": "4–6\"",
+      "note": "Fragrant; gloves recommended — bulbs can irritate skin.",
+      "emoji": "💙"
+    }
+  ],
+  "leafCare": [
+    {
+      "id": "mulch",
+      "title": "Shredded leaf mulch",
+      "body": "Run a mower over dry leaves (or use a shredder). 2–3\" around perennials and under shrubs after soil cools. Keeps moisture, feeds microbes, suppresses weeds.",
+      "emoji": "🍃"
+    },
+    {
+      "id": "lawn",
+      "title": "Lawn leaf layer",
+      "body": "A thin shredded layer can stay on turf. Thick wet mats smother grass — bag or move those to beds/compost.",
+      "emoji": "🌿"
+    },
+    {
+      "id": "habitat",
+      "title": "Leave some leaves",
+      "body": "A corner pile or under shrubs shelters overwintering insects and pollinators. Balance tidy curb appeal with one wild edge.",
+      "emoji": "🐛"
+    },
+    {
+      "id": "disease",
+      "title": "Diseased foliage out",
+      "body": "Bag black-spot roses, mildewed squash vines, etc. — do not compost into unfinished piles. Trash or hot-compost only.",
+      "emoji": "⚠️"
+    },
+    {
+      "id": "gutters",
+      "title": "Gutters & drains",
+      "body": "Millersville fall storms + leaf dams = basement risk. Clear gutters and downspouts while you're leaf-raking.",
+      "emoji": "🏠"
+    }
+  ],
+  "cutBack": [
+    {"id": "cut-peony", "label": "Peony foliage to soil line after frost", "keep": false},
+    {"id": "cut-hosta", "label": "Hosta leaves once yellowed/slimy", "keep": false},
+    {"id": "cut-daylily", "label": "Daylily spent scapes; foliage after frost kill", "keep": false},
+    {"id": "keep-grass", "label": "Leave ornamental grasses & coneflower seedheads", "keep": true},
+    {"id": "keep-hydrangea", "label": "Do not hard-prune oakleaf/mophead hydrangeas now", "keep": true}
+  ]
+}

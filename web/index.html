@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fall Garden 7b · Millersville</title>
+<meta name="theme-color" content="#14532d">
+<meta name="description" content="Fall planting and leaf-season calendar for a Millersville backyard in USDA zone 7b — garlic, cover crops, bulbs, cut-back. EXAMPLE guidance.">
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+
+<header class="top no-print">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 48 48" width="44" height="44">
+        <defs>
+          <linearGradient id="fg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#166534"/>
+            <stop offset="1" stop-color="#d97706"/>
+          </linearGradient>
+        </defs>
+        <rect x="6" y="8" width="36" height="32" rx="10" fill="#0f2a1a" stroke="url(#fg)" stroke-width="2.4"/>
+        <path d="M24 14c-2 6-8 10-8 16a8 8 0 0016 0c0-6-6-10-8-16z" fill="#22c55e" opacity=".85"/>
+        <circle cx="30" cy="20" r="4" fill="#fbbf24"/>
+        <path d="M14 34h20" stroke="#a3e635" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Fall Garden · 7b</h1>
+      <p class="tag">Millersville MD · USDA zone 7b · garlic · bulbs · leaves</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <span class="pill soft" id="monthPill">October–November</span>
+    <span class="pill amber" id="donePill">0 checked</span>
+  </div>
+</header>
+
+<nav class="tabs no-print" role="tablist" aria-label="Garden screens">
+  <button class="tab active" data-view="month" role="tab" aria-selected="true">📅 This month</button>
+  <button class="tab" data-view="plant" role="tab" aria-selected="false">🌱 Plant now</button>
+  <button class="tab" data-view="bulbs" role="tab" aria-selected="false">🌷 Bulbs</button>
+  <button class="tab" data-view="leaf" role="tab" aria-selected="false">🍃 Leaf care</button>
+  <button class="tab" data-view="journal" role="tab" aria-selected="false">📓 Journal</button>
+  <button class="tab" data-view="about" role="tab" aria-selected="false">About</button>
+</nav>
+
+<main>
+  <section id="view-month" class="view active" role="tabpanel">
+    <div class="hero panel autumn-panel">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Zone 7b · central Maryland</p>
+          <h2 class="view-title">This month in the backyard</h2>
+          <p class="lede">Checklist for October–November planting and tidy-up. Tap items to mark done — saved in localStorage. <span class="ex-label">EXAMPLE</span> guidance, not a soil test.</p>
+        </div>
+        <div class="month-toggle">
+          <button type="button" class="btn ghost sm month-btn active" data-month="october">October</button>
+          <button type="button" class="btn ghost sm month-btn" data-month="november">November</button>
+        </div>
+      </div>
+      <p class="focus-line" id="focusLine"></p>
+    </div>
+    <div id="monthRoot" class="check-list"></div>
+    <div class="panel soft-panel">
+      <h3>Cut back vs leave standing</h3>
+      <div id="cutRoot" class="cut-grid"></div>
+    </div>
+  </section>
+
+  <section id="view-plant" class="view" role="tabpanel">
+    <div class="panel">
+      <h2 class="view-title">Plant now · zone 7b</h2>
+      <p class="lede">Garlic, cover crops, and hardy greens that still make sense in a Millersville fall. Windows are typical for USDA 7b — watch your first hard freeze.</p>
+      <div id="plantRoot" class="card-grid"></div>
+    </div>
+  </section>
+
+  <section id="view-bulbs" class="view" role="tabpanel">
+    <div class="panel autumn-panel">
+      <h2 class="view-title">Spring bulbs by Thanksgiving</h2>
+      <p class="lede">Aim to get bulbs in while soil is still workable — ideally by Thanksgiving in zone 7b. Depth is tip-to-soil rule of thumb.</p>
+      <div id="bulbRoot" class="bulb-table"></div>
+    </div>
+  </section>
+
+  <section id="view-leaf" class="view" role="tabpanel">
+    <div class="panel">
+      <h2 class="view-title">Leaf care &amp; mulch</h2>
+      <p class="lede">Turn the leaf dump into free mulch — and leave a little habitat for next year's pollinators.</p>
+      <div id="leafRoot" class="leaf-list"></div>
+    </div>
+  </section>
+
+  <section id="view-journal" class="view" role="tabpanel">
+    <div class="panel">
+      <h2 class="view-title">Garden journal</h2>
+      <p class="lede">Quick notes stay on this device only.</p>
+      <form id="journalForm" class="journal-form no-print">
+        <input type="text" id="journalText" placeholder="e.g. Planted Music garlic in north bed…" maxlength="280" required>
+        <button type="submit" class="btn primary">Add entry</button>
+      </form>
+      <div id="journalRoot" class="journal-list"></div>
+    </div>
+  </section>
+
+  <section id="view-about" class="view" role="tabpanel">
+    <div class="about-wrap">
+      <div class="panel">
+        <h2 class="view-title">About Fall Garden 7b</h2>
+        <p class="lede">Fall planting and leaf-season calendar for a <strong>Millersville, MD</strong> backyard in <strong>USDA hardiness zone 7b</strong> — garlic, cover crops, bulbs, and what to cut back in October–November.</p>
+        <ul class="about-list">
+          <li>Guidance is general public horticulture for zone 7b — <strong>not</strong> a soil test or site diagnosis.</li>
+          <li>Checklist &amp; journal save in <code>localStorage</code>.</li>
+          <li>Starter content labeled <strong class="ex-label">EXAMPLE</strong> / demo.</li>
+        </ul>
+        <p class="hint" id="disclaimer"></p>
+        <div class="about-actions no-print">
+          <button type="button" class="btn ghost" id="btnExport">Export save JSON</button>
+          <button type="button" class="btn ghost danger" id="btnResetChecks">Reset checklist</button>
+          <button type="button" class="btn ghost danger" id="btnResetAll">Reset all data</button>
+        </div>
+        <p class="hint" id="aboutHint"></p>
+      </div>
+      <div class="panel soft-panel">
+        <h3>Hash routes</h3>
+        <p class="mono">#month · #plant · #bulbs · #leaf · #journal · #about</p>
+        <h3>TokenMax</h3>
+        <p class="hint">Offline single-file burn build · port 4323</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot no-print">
+  <span>Boyd · Millersville · zone 7b autumn</span>
+  <span id="footStat"></span>
+</footer>
+
+<script>
+window.__GARDEN__ = /*__GARDEN__*/ null /*__/GARDEN__*/;
+</script>
+<script>/*__APP__*/</script>
+</body>
+</html>
