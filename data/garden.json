@@ -1,7 +1,7 @@
 {
   "title": "Fall Garden · Zone 7b",
   "version": 1,
-  "location": "Millersville, MD",
+  "location": "Lakeside, MD",
   "zone": "USDA 7b",
   "disclaimer": "General public horticulture guidance for USDA zone 7b (central Maryland). Not a soil test, pest diagnosis, or site-specific landscape prescription. Adjust for your microclimate, drainage, and HOA rules.",
   "months": [
@@ -41,7 +41,7 @@
       "window": "Oct–Nov (zone 7b)",
       "emoji": "🧄",
       "how": "Separate cloves from bulbs the day you plant. Space 4–6\" apart in rows 12\" apart. Pointy tip up, 2–3\" deep. Mulch lightly after planting.",
-      "why": "Needs winter chill for good bulb formation. Millersville 7b winters usually deliver it.",
+      "why": "Needs winter chill for good bulb formation. Lakeside 7b winters usually deliver it.",
       "example": true
     },
     {
@@ -151,7 +151,7 @@
     {
       "id": "gutters",
       "title": "Gutters & drains",
-      "body": "Millersville fall storms + leaf dams = basement risk. Clear gutters and downspouts while you're leaf-raking.",
+      "body": "Lakeside fall storms + leaf dams = basement risk. Clear gutters and downspouts while you're leaf-raking.",
       "emoji": "🏠"
     }
   ],
